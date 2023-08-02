@@ -3,7 +3,7 @@ package Steps;
 import Base.BaseUtil;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
-import org.openqa.selenium.chrome.ChromeDriver
+import org.openqa.selenium.chrome.ChromeDriver;
 import cucumber.api.java.Before;
 
 /**
