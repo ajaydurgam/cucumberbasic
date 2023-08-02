@@ -6,8 +6,8 @@ import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
 /**
- * Created by Karthik on 10/17/2016.
- */
+ * Created by Karthik on 10/17/2016. */
+ 
 public class Hook extends BaseUtil{
 
 
@@ -22,8 +22,11 @@ public class Hook extends BaseUtil{
 
         System.out.println("Opening the browser : MOCK");
 
-        //Passing a dummy WebDriver instance step info
-        base.StepInfo = "FirefoxDriver";
+        /* Passing a dummy WebDriver instance step info
+        base.StepInfo = "FirefoxDriver"; */
+        
+        System.setProperty("webdriver.firefox.marionette", "C:\\Users\\ajdurgam\\WebDriver\\Libs\\chromedriver.exe");
+            base.Driver = new ChromeDriver();
     }
 
 
